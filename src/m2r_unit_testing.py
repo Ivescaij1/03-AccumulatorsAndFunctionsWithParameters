@@ -8,7 +8,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Mark Hays,
 """
 ###############################################################################
 #
-# TODO: 1.
+# DONE: 1.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -57,6 +57,7 @@ def distance(point):
       If the argument is  rg.Point(3, 4)  this function returns 5.
     """
     # This code has an error, on purpose.  Do NOT fix it.
+    # y_squared should be point.y * point.y
     x_squared = point.x * point.x
     y_squared = point.y * point.x
 
@@ -69,7 +70,7 @@ def distance(point):
 main()
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #
 # READ the following, asking questions as needed.
 # When you believe that you understading what is says about UNIT TESTING,
