@@ -34,9 +34,9 @@ def run_test_draw_circles():
     #   Do NOT touch this function - it has no TODOs in it.
     # ------------------------------------------------------------------
     print()
-    print('--------------------------------------------------')
+    print('-------------------------------------------')
     print('Testing  draw_circles:  See graphics window')
-    print('--------------------------------------------------')
+    print('-------------------------------------------')
     draw_circles()
 
 
@@ -168,9 +168,9 @@ def better_draw_circles(delta_r):
 def run_test_even_better_draw_circles():
     """ Tests the   even_better_draw_circles   function. """
     print()
-    print('--------------------------------------------------')
+    print('-------------------------------------------------------')
     print('Testing  even_better_draw_circles:  See graphics window')
-    print('--------------------------------------------------')
+    print('-------------------------------------------------------')
 
     # Test 1:
     delta_r = 50
