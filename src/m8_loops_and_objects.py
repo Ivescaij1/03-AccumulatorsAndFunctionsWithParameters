@@ -60,9 +60,9 @@ def draw_circles1():
     # HINT: You might find a prior module useful when 'writing' this code.
     # ------------------------------------------------------------------
     print()
-    print('--------------------------------------------------')
+    print('-------------------------------------------')
     print('Running draw_circles1:  See graphics window')
-    print('--------------------------------------------------')
+    print('-------------------------------------------')
 
     window = rg.RoseWindow(400, 400)
     center = rg.Point(200, 200)
