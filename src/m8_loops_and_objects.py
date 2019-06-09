@@ -17,6 +17,7 @@ def main():
     # Test your functions by putting calls to them here:
     print_sequence1()
     draw_circles1()
+    print_sequence2()
 
 
 def print_sequence1():
@@ -40,8 +41,8 @@ def print_sequence1():
     print('Running print_sequence1:')
     print('--------------------------------------------------')
 
-    r = 20
-    for k in range(r + 1):
+    n = 20
+    for k in range(n + 1):
         print(10 * k)
 
 
@@ -86,14 +87,17 @@ def print_sequence2():
       390.
     """
     # ------------------------------------------------------------------
-    # TODO: 4. Implement this function, per its doc-string above.
+    # DONE: 4. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
     print()
-    print('--------------------------------------------------')
+    print('------------------------')
     print('Running print_sequence2:')
-    print('--------------------------------------------------')
+    print('------------------------')
+    n = 18
+    for k in range(n):
+        print(20 * k + 50)
 
 
 def draw_circles2():
