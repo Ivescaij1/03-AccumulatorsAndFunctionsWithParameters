@@ -67,6 +67,7 @@ def draw_circles1():
     print('-------------------------------------------')
 
     window = rg.RoseWindow(400, 400)
+
     center = rg.Point(200, 200)
     for k in range(21):
         circle = rg.Circle(center, 10 * k)
@@ -96,6 +97,7 @@ def print_sequence2():
     print('------------------------')
     print('Running print_sequence2:')
     print('------------------------')
+
     n = 18
     for k in range(n):
         print(20 * k + 50)
@@ -117,9 +119,9 @@ def draw_circles2():
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
     print()
-    print('--------------------------------------------------')
+    print('-------------------------------------------')
     print('Running draw_circles2:  See graphics window')
-    print('--------------------------------------------------')
+    print('-------------------------------------------')
 
     window = rg.RoseWindow(400, 400)
 
