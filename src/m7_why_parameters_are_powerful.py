@@ -13,7 +13,7 @@ def main():
     run_test_draw_circles()
     # Un-comment the next lines when you are ready to use them.
     run_test_better_draw_circles()
-    # run_test_even_better_draw_circles()
+    run_test_even_better_draw_circles()
 
 
 # ----------------------------------------------------------------------
@@ -102,19 +102,19 @@ def run_test_better_draw_circles():
     print('--------------------------------------------------')
 
     # Test 1:
-    dr = 2
-    print('Test 1 delta_r:', dr)
-    better_draw_circles(dr)
+    delta_r = 2
+    print('Test 1 Delta_r:', delta_r)
+    better_draw_circles(delta_r)
 
     # Test 2:
-    dr = 5
-    print('Test 2 delta_r:', dr)
-    better_draw_circles(dr)
+    delta_r = 5
+    print('Test 2 Delta_r:', delta_r)
+    better_draw_circles(delta_r)
 
     # Test 1:
-    dr = 15
-    print('Test 3 delta_r:', dr)
-    better_draw_circles(dr)
+    delta_r = 15
+    print('Test 3 Delta_r:', delta_r)
+    better_draw_circles(delta_r)
 
 
 def better_draw_circles(delta_r):
@@ -165,6 +165,68 @@ def better_draw_circles(delta_r):
 #   In testing your even_better_draw_circles function,
 #   can you make some fun pictures?
 # ----------------------------------------------------------------------
+def run_test_even_better_draw_circles():
+    """ Tests the   even_better_draw_circles   function. """
+    print()
+    print('--------------------------------------------------')
+    print('Testing  even_better_draw_circles:  See graphics window')
+    print('--------------------------------------------------')
+
+    # Test 1:
+    delta_r = 50
+    number = 5
+    delay = 0.5
+    color = 'red'
+    print('Test 1 Delta_r:', delta_r)
+    print('       Number:', number)
+    print('       Delay:', delay)
+    print('       Color:', color)
+    even_better_draw_circles(delta_r, number, delay, color)
+
+    # Test 2:
+    delta_r = 10
+    number = 20
+    delay = 0.1
+    color = 'blue'
+    print('Test 2 Delta_r:', delta_r)
+    print('       Number:', number)
+    print('       Delay:', delay)
+    print('       Color:', color)
+    even_better_draw_circles(delta_r, number, delay, color)
+
+    # Test 3:
+    delta_r = 5
+    number = 60
+    delay = 0.01
+    color = 'green'
+    print('Test 3 Delta_r:', delta_r)
+    print('       Number:', number)
+    print('       Delay:', delay)
+    print('       Color:', color)
+    even_better_draw_circles(delta_r, number, delay, color)
+
+
+def even_better_draw_circles(delta_r, n, t, color):
+    """
+    -- Constructs a window whose width and height are both 400.
+    -- Constructs and draws user defined number "n" of rg.Circle objects such that:
+         -- Each is centered at (300, 300)
+         -- They have radii vary by user defined parameter "delta_r" respectively.
+         -- Pauses user defined delay "t" seconds after rendering each.
+         -- Draw with a customized parameter "outline_color"
+    -- Waits for the user to press the mouse, then closes the window.
+    """
+    window = rg.RoseWindow(600, 600)
+
+    center = rg.Point(300, 300)
+    for k in range(n+1):
+        circle = rg.Circle(center, delta_r * k)
+        circle.outline_color = color
+        circle.attach_to(window)
+        window.render(t)  # Pauses for t seconds after rendering.
+
+    window.close_on_mouse_click()
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
