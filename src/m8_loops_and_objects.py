@@ -262,9 +262,9 @@ def draw_cosines_and_sines():
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
     print()
-    print('--------------------------------------------------')
+    print('----------------------------------------------------')
     print('Running draw_cosines_and_sines:  See graphics window')
-    print('--------------------------------------------------')
+    print('----------------------------------------------------')
 
     window = rg.RoseWindow(400, 400)
 
