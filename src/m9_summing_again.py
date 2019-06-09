@@ -7,8 +7,6 @@ Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
          their colleagues and Junfei Cai.
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
-import math
-
 
 def main():
     """ Calls the   TEST   functions in this module. """
