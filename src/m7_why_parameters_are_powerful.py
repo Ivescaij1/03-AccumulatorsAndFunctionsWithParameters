@@ -209,7 +209,7 @@ def run_test_even_better_draw_circles():
 def even_better_draw_circles(delta_r, n, t, color):
     """
     -- Constructs a window whose width and height are both 400.
-    -- Constructs and draws user defined number "n" of rg.Circle objects such that:
+    -- Constructs and draws user defined number "n" of Circle objects (exclude the first one with r = 0) such that:
          -- Each is centered at (300, 300)
          -- They have radii vary by user defined parameter "delta_r" respectively.
          -- Pauses user defined delay "t" seconds after rendering each.
@@ -219,7 +219,7 @@ def even_better_draw_circles(delta_r, n, t, color):
     window = rg.RoseWindow(600, 600)
 
     center = rg.Point(300, 300)
-    for k in range(n+1):
+    for k in range(n + 1):
         circle = rg.Circle(center, delta_r * k)
         circle.outline_color = color
         circle.attach_to(window)
