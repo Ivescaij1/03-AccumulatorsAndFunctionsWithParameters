@@ -20,6 +20,7 @@ def main():
     print_sequence2()
     draw_circles2()
     print_sequence3()
+    draw_circles3()
 
 
 def print_sequence1():
@@ -177,9 +178,21 @@ def draw_circles3():
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
     print()
-    print('--------------------------------------------------')
+    print('-------------------------------------------')
     print('Running draw_circles3:  See graphics window')
-    print('--------------------------------------------------')
+    print('-------------------------------------------')
+
+    window = rg.RoseWindow(300, 300)
+
+    n = 100
+    for k in range(n):
+        r = k + 1
+        center = rg.Point(200, 150)
+        circle = rg.Circle(center, r)
+        circle.attach_to(window)
+        window.render()
+
+    window.close_on_mouse_click()
 
 
 def print_cosines():
